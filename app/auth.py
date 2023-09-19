@@ -9,8 +9,6 @@ Record:
     2023/9/14 Create file.
 
 """
-import jwt
-from jwt import DecodeError
 from rest_framework import authentication
 
 
@@ -27,6 +25,7 @@ class JWTAuthentication(authentication.BasicAuthentication):
             username(str): 用户名
             token(str): token
         """
+        # TODO 逻辑待补充
         user = ""
         session = ""
         return user, session
@@ -45,6 +44,7 @@ class CasAuthentication(authentication.BasicAuthentication):
             username(str): 用户名
             token(str): token
         """
+        # TODO 逻辑待补充
         user = ""
         session = ""
         return user, session
@@ -63,6 +63,7 @@ class LdapAuthentication(authentication.BasicAuthentication):
             username(str): 用户名
             token(str): token
         """
+        # TODO 逻辑待补充
         user = ""
         session = ""
         return user, session

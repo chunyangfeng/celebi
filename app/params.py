@@ -9,6 +9,8 @@ Record:
     2023/9/14 Create file.
 
 """
+# 默认权限
+PER_BASE = "celebi"
 
 # 日期格式相关
 DATE_STANDARD = '%Y-%m-%d'  # 标准日期格式化
@@ -79,3 +81,6 @@ HTTP_METHOD_CHOICE = (
     (HTTP_METHOD_DELETE, 'DELETE'),
     (HTTP_METHOD_PATCH, 'PATCH'),
 )
+
+# 非法查询字符
+QUERY_STRING_ILLEGAL_VALUE = "illegal-query-string"
